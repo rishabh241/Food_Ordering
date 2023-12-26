@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="100dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/rec_cart_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/menu1"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rec_cart_name"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Burger"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/rec_cart_img"
+            app:layout_constraintTop_toTopOf="@+id/rec_cart_img" />
+
+        <TextView
+            android:id="@+id/rec_cart_price"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$8"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rec_cart_img"
+            app:layout_constraintStart_toStartOf="@+id/rec_cart_name"
+            app:layout_constraintTop_toBottomOf="@+id/rec_cart_name" />
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/addtocartshape"
+            android:src="@drawable/minus"
+            app:layout_constraintBottom_toBottomOf="@+id/rec_cart_quant"
+            app:layout_constraintEnd_toStartOf="@+id/rec_cart_quant"
+            app:layout_constraintTop_toTopOf="@+id/rec_cart_quant" />
+
+        <TextView
+            android:id="@+id/rec_cart_quant"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:text="1"
+            android:gravity="center"
+            style="@style/title_style"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/plus"
+            app:layout_constraintEnd_toStartOf="@+id/plus"
+            app:layout_constraintTop_toTopOf="@+id/plus" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/addtocartshape"
+            android:src="@drawable/plus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/trash"
+            app:layout_constraintEnd_toEndOf="@+id/plus"
+            app:layout_constraintStart_toStartOf="@+id/minus"
+            app:layout_constraintTop_toBottomOf="@+id/rec_cart_quant" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

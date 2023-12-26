@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logIn">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/deliever_fa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/lato"
+        android:text="Deliever Favorite Food"
+        android:textColor="#53E88B"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/login_to_yo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/sign_up_her"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/log_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/edit_bg"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/user"
+        android:textColorHint="#3B3B3B"
+        android:paddingLeft="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <EditText
+        android:id="@+id/log_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_bg"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/mail"
+        android:textColorHint="#3B3B3B"
+        android:paddingLeft="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/log_name"
+        app:layout_constraintStart_toStartOf="@+id/log_name"
+        app:layout_constraintTop_toBottomOf="@+id/log_name" />
+
+
+    <EditText
+        android:id="@+id/log_pass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_bg"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/lock"
+        android:textColorHint="#3B3B3B"
+        android:paddingLeft="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/log_email"
+        app:layout_constraintStart_toStartOf="@+id/log_email"
+        app:layout_constraintTop_toBottomOf="@+id/log_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        style="@style/cta_button_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Create Account"
+        android:padding="4dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/log_pass"
+        app:layout_constraintStart_toStartOf="@+id/log_pass"
+        app:layout_constraintTop_toBottomOf="@+id/log_pass" />
+
+    <TextView
+        style="@style/or_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_sign_up_"
+        android:textAlignment="center"
+        android:fontFamily="@font/yeon_sung"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatButton"
+        app:layout_constraintStart_toStartOf="@+id/appCompatButton"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/gf_btn"
+        android:drawableStart="@drawable/facebook"
+        android:drawablePadding="8dp"
+        android:paddingStart="8dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton3"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gf_btn"
+        android:drawableStart="@drawable/google"
+        android:drawablePadding="8dp"
+        android:paddingStart="8dp"
+        android:text="Google"
+        android:layout_marginStart="12dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton2"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton2"
+        app:layout_constraintTop_toTopOf="@+id/appCompatButton2" />
+
+    <TextView
+        style="@style/don_t_have_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/already_hav"
+        android:textColor="#15BE77"
+        android:fontFamily="@font/lato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

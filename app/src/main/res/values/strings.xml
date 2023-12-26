@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Food_Ordering</string>
+    <string name="title">Wave of Food</string>
+    <string name="enjoy_resta">Enjoy Restaurant Quality Meals \nat Home</string>
+    <string name="login_to_yo">Login To Your Account</string>
+    <string name="or_continue">Or\nContinue With</string>
+    <string name="don_t_have_">Don\u00e2\u0080\u0099t Have Account?</string>
+    <string name="sign_up_her">Sign Up Here</string>
+    <string name="already_hav">Already Have An Account?</string>
+    <string name="or_sign_up_">Or\nSign Up With</string>
+    <string name="chooseLoc">Choose Your Location</string>
+
+    <style name="title_style">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="fontFamily">@font/yeon_sung</item>
+    </style>
+
+    <style name="deliever_fa">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.07</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="enjoy_resta">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#53E88B</item>
+    </style>
+
+    <style name="cta_button_">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/lato</item>
+    </style>
+
+    <style name="login_to_yo">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">#53E88B</item>
+    </style>
+
+    <style name="or_continue">
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">#09051C</item>
+    </style>
+
+    <style name="don_t_have_">
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="chooseLoc">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="frag_style">
+        <item name="fontFamily">@font/yeon_sung</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Hello home fragment</string>
+    <string name="cart_fragment">Hello cart fragment</string>
+    <string name="search_fragment">Hello search fragment</string>
+    <string name="history_fragment">Hello History fragment</string>
+    <string name="user_fragment">Hello Profile fragment</string>
+
+</resources>
